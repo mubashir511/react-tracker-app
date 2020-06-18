@@ -33,12 +33,8 @@ function GlobalProvider({ children }) {
     }
 
     return (
-        // provide "transactions" property to all the chiildren objects
         <GlobalContext.Provider value={{ transactions: state.transactions, deleteTransaction, addTransaction }}>
-
-            {/* "children would be all wraping compnents" */}
             {children}
-
         </GlobalContext.Provider>
     )
 }
