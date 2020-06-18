@@ -18,7 +18,7 @@ function ExpenseTracker() {
             <Logs />
             <AddTransaction />
         </GlobalProvider>
-    )
+    );
 }
 
 export default ExpenseTracker
