@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 :root {
     --shadow-scheme: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
-    /* background-color: rgb(236, 235, 235); */
-    background-color:rgb(19, 20, 22);
+    background-color: #5C821A;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,12 +10,14 @@
 }
 #root {
     box-sizing: border-box;
-    /* box-shadow: var(--shadow-scheme); */
+    box-shadow: var(--shadow-scheme);
     padding: 8% 4%;
     border-radius: 1%;
     margin: 10% auto;
     min-width: 32vw;
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background-color: #C6D166;
+    /* background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); */
+
 }
 #header{
     text-align: center;
@@ -29,6 +30,7 @@ h4 {
 }
 h3 {
     margin: 10% 1% 2% 1%;
+    border-bottom: 1px solid black;
 }
 h1 {
     margin: 2% 1% 8% 1%;
@@ -37,10 +39,14 @@ p{
     margin: 10% 0;
     font-size: large;
 }
+#current-balance {
+    text-align: center;
+}
 #income-expense {
     box-sizing: border-box;
     background-color: #fff;
     box-shadow: var(--shadow-scheme);
+    border-radius: 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -152,7 +158,8 @@ form>button {
     box-sizing : border-box;
     font-size: 18px;
     color: white;
-    background: #c57cf5;
+    background-color: #0F1B07;
+    color: #FFF;
     border-radius: 5px;
     width: 100%;
     padding: 10px;
@@ -160,6 +167,8 @@ form>button {
     border: none;
 }
 form>button:hover {
-    background: #bd6df3;
+    /* background: #bd6df3; */
+    background-color: #FFF;
+    color: #0F1B07;
     transition: 0.2s ease-out;
 }
